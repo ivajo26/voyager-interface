@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Voyager-Bot-Control</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/speedometer.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/thermometer.css" media="screen" title="no title" charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="">
+      <div class="animated primary">
+        <div class="thermometer">
+          <div class="thermometer-body">
+            <progress max="100" value="0" id="th-animated"></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="velocity">
+        <div class="progress-radial progress-35">
+          <div class="overlay">35 rpms</div>
+        </div>
+      </div>
+      <div class="keys">
+        <div class="up">
+
+          <button class="key" name="keyUp" disabled="true"><i class="fa fa-arrow-up"></i></button>
+          <button class="key" style="visibility: hidden;" name="keyUp" disabled="true"><i class="fa fa-arrow-up"></i></button>
+        </div>
+        <div class="down">
+          <button class="key" name="keyLeft"><i class="fa fa-arrow-left"></i></button>
+          <button class="key" name="keyDown"><i class="fa fa-arrow-down"></i></button>
+          <button class="key" name="keyRight"><i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/thermometer.js" charset="utf-8"></script>
+    <script src="js/speedometer.js" charset="utf-8"></script>
+  </body>
+</html>
